@@ -44,3 +44,13 @@ justify-content: space-between;
     opacity: 1;
     padding-top: 0;
   }
+
+  @media (max-width: 650px){
+    .contain{
+      flex-direction: column;
+    }
+    .image{
+      flex-basis: 100%;
+      margin: 20px;
+    }
+  }
