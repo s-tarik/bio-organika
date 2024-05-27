@@ -1,0 +1,88 @@
+.produits-page-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  }
+
+
+  
+  .main-content {
+    background-color: #fff; /* Example background color */
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .produits-page-container {
+      grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    }
+  
+    .sidenav {
+      margin-bottom: 20px;
+    }
+  }
+
+   .sidenav {
+    width: 300px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;  
+  }
+  
+  .sidenav ul {
+    list-style: none;
+  padding: 0;
+  margin: 0;
+    
+  }
+  
+  .sidenav li {
+    display: block;
+  width: 300px;
+  padding: 10px; /* Adjust padding as needed */
+  text-decoration: none;
+  }
+
+  .sidenav li:hover{
+    background-color: #3b760a; /* Customize hover effect as needed */
+    color: #fff;
+
+  }
+  .active{
+    color:#fff;
+    background-color: #3b760a;
+  }
+  .e{
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .productCard {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Adjust the gap between items */
+  }
+
+
+.card-item {
+  display: block;
+  align-items: center;
+  text-align: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.CategoryFont{
+  color: #3b760a;
+  margin-left: 8px;
+  font-size: 24px;
+}
+  
+ 
+   

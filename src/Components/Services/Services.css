@@ -1,0 +1,46 @@
+.contain{
+margin: 80px auto;
+width: 90%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.image{
+    flex-basis: 31%;
+    position: relative;
+}
+.f{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 152, 51, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    /* padding-top: 70%; */
+    transition: 0.4s;
+    padding: 0 10px;
+    box-sizing: border-box; /* Assure que le padding est inclus dans la taille de l'élément */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+.image:hover .f{
+    opacity: 1;
+    padding-top: 0;
+  }
+  .f.visible {
+    opacity: 1;
+    padding-top: 0;
+  }
