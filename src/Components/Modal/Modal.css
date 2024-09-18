@@ -1,0 +1,97 @@
+/* Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is on top of other content */
+  }
+  
+  .modalprod {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 1000px; /* Adjust width as needed */
+  height: 80%;
+  overflow-y: auto;
+  text-align: center;
+  }
+  
+  .modalprod-content {
+    text-align: center;
+  }
+  .modalprod-content h1 {
+    text-align:justify;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border-bottom: 4mm ridge rgba(42, 126, 33, 0.6);
+  }
+  .modalprod-content h3{
+    text-align:justify;
+    margin-left: 10px;
+  }
+  .modalprod-content p {
+    text-align: start;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  .modalprod-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    background: #009833;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    justify-content: center;
+  }
+  
+  .close-button:hover {
+    background: #007a2b;
+  }
+
+  @media (max-width: 768px) {
+    .modalprod {
+      width: 90%; /* Adjust width for smaller screens */
+      height: 90%; /* Adjust height for smaller screens */
+      padding: 10px;
+    }
+  
+    .modalprod-content h1,
+    .modalprod-content h3,
+    .modalprod-content p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .modalprod-content p {
+      flex-direction: column; /* Stack paragraphs vertically on small screens */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .close-button {
+      width: 100%; /* Make close button full width on small screens */
+      padding: 10px;
+    }
+  }
+  

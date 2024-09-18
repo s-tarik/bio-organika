@@ -1,47 +1,72 @@
-.valeur{
+.valeur {
     margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 50px; /* Espace entre les sections */
+}
+
+.valeur-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    flex-wrap: wrap;
 }
-.valeur-left{
-    flex-basis: 40%;
+
+.valeur-left {
+    flex-basis: 50%;
 }
-.valeur-right{
-    flex-basis: 56%;
+
+.valeur-right {
+    flex-basis: 50%;
 }
-.valeur-img{
-    width: 100%;
+
+.valeur-img {
+    width: 80%;
     border-radius: 10px;
 }
-.valeur h3{
+
+.valeur h3 {
     font-weight: 600;
-    font-weight: 16px;
+    font-size: 16px;
     color: #21a038;
 }
-.valeur h2{
+
+.valeur h2 {
     font-size: 35px;
     color: #000F38;
     margin: 10px 0;
     max-width: 400px;
 }
-.valeur p{
+
+.valeur p {
     color: #676767;
     margin-bottom: 15px;
-    
 }
 
-@media (max-width: 800px){
-    .valeur{
+/* Spécifique pour la deuxième section */
+.valeur-section.reverse {
+    flex-direction: row-reverse; /* Inverse l'ordre pour que l'image soit à droite et le texte à gauche */
+}
+
+@media (max-width: 800px) {
+    .valeur-section {
         flex-direction: column;
     }
-    .valeur-left{
+
+    .valeur-left {
         flex-basis: 100%;
         margin: 20px;
+        order: 1;
+    }
+
+    .valeur-right {
+        flex-basis: 100%;
         order: 2;
     }
-    .valeur-right{
-        flex-basis: 100%;
+
+    /* Pas besoin d'inverser sur mobile, l'ordre reste le même */
+    .valeur-section.reverse {
+        flex-direction: column;
     }
 }

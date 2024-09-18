@@ -53,6 +53,8 @@ const Contact = () => {
                 <input type="text" name="name" placeholder='entrez votre nom' required/>
                 <label>N° de téléphone</label>
                 <input type="tel" name='phone' placeholder='entrez votre numèro de téléphone' required/>
+                <label>Profession</label>
+                <input type="tel" name='profession' placeholder='entrez votre profession' required/>
                 <label>écrivez votre message ici</label>
                 <textarea name="message" rows="6" placeholder='entrez votre message' required></textarea>
                 <button type='submit' className='a'>Envoyer maintenant <img src={arrow} alt="" /></button>

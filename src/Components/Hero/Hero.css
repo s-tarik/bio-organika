@@ -1,28 +1,59 @@
-.hero{
+.hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 92, 25, 0.7), rgba(0, 92, 25, 0.7)), url('../../assets/h1.jpg');
+    background: linear-gradient(rgba(0, 92, 25, 0.7), rgba(0, 92, 25, 0.7)), url('../../assets/hero.png');
     background-size: cover;
     background-position: center;
     color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    justify-content: center; /* Centre le contenu verticalement */
 }
-.hero-text{
+
+.hero-text {
     text-align: center;
     max-width: 800px;
+    margin-bottom: 20px;
 }
-.hero-text h1{
+
+.hero-text h1 {
     font-size: 60px;
     font-weight: 600;
 }
-.hero-text p{
+
+.hero-text p {
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
 }
-.boutton{
+
+.countup-section {
+    display: flex; /* Aligne les éléments en ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    flex-wrap: wrap; /* Permet au texte de passer à la ligne si l'espace est insuffisant */
+    margin-top: 50px; /* Ajoute une marge au-dessus pour espacer du contenu précédent */
+    width: 100%; /* Prend toute la largeur disponible */
+    text-align: center; /* Centre le texte dans la section */
+}
+
+.countup-section h2 {
+    font-size: 20px; /* Ajuster la taille du texte du compteur */
+    font-weight: 600; /* Style pour correspondre au titre */
+    color: #fff; /* Couleur du texte pour contraster avec le fond */
+    margin: 10px 50px; /* Marge autour du compteur */
+}
+
+.countup-section span {
+    font-size: 24px; /* Taille du texte pour le label */
+    color: #fff; /* Couleur du texte pour correspondre au design */
+    border: 2px solid #fff; /* Bordure blanche autour du texte */
+    border-radius: 5px; /* Bordure arrondie */
+    padding: 5px 10px; /* Espacement intérieur */
+    background-color: rgba(11, 46, 1, 0.592); /* Fond semi-transparent pour faire ressortir le texte */
+}
+
+.boutton {
     background: #fff;
     color: black;
     padding: 14px 25px;
@@ -35,19 +66,36 @@
     align-items: center;
     justify-content: center;
 }
-.boutton img{
+
+.boutton img {
     width: 20px;
     margin-left: 10px;
-  }
+}
 
-@media (max-width: 650px){
-    .hero-text h1{
+@media (max-width: 650px) {
+    .hero-text h1 {
         font-size: 30px;
         max-width: 400px;
         margin: auto;
     }
-    .hero-text p{
+
+    .hero-text p {
         font-size: 14px;
         margin: 15px auto 30px;
+    }
+
+    .countup-section {
+        flex-direction: column; /* Colonne pour petits écrans */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .countup-section h2 {
+        font-size: 18px; /* Taille réduite pour petits écrans */
+        margin: 15px 0; /* Marge verticale */
+    }
+
+    .countup-section span {
+        font-size: 18px; /* Taille réduite pour petits écrans */
+        padding: 3px 6px; /* Réduit l'espacement intérieur */
     }
 }

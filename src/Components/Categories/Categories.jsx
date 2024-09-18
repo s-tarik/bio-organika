@@ -13,12 +13,17 @@ const Categories = ({ categories, onSelectCategory }) => {
   return (
     <div id='category' className='container'>
       <ul className='b'>
-      {categories.map(category => (
-        <button className='c' key={category} onClick={() => handleCategorySelect(category)}>
+      {categories.slice(0, 9).map(category => (
+        <div className='c' key={category} onClick={() => handleCategorySelect(category)}>
           {category}
-        </button>
+        </div>
       ))}
+
       </ul>
+      <div className='seeprdbtn'>
+      <a href='/produits?category=ARTICULATIONS'>Afficher tous</a>
+
+      </div>
     </div>
   );
 };
