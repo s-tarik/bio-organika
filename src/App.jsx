@@ -559,8 +559,8 @@ const App = () => {
                 <Partners />
                 <Title subTitle='VALEURS' title='Nos valeurs' />
                 <Valeurs />
-                <Title subTitle='BESOINS' title='Vos besoins' />
-                <Services />
+                {/* <Title subTitle='BESOINS' title='Vos besoins' />
+                <Services /> */}
                 <Title subTitle='PRODUITS' title='Nos gammes' />
                 <Categories categories={categories} onSelectCategory={onSelectCategory} />
               </>
